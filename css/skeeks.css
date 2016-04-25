@@ -1,0 +1,167 @@
+/* COMMON */
+
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Sintony', sans-serif;
+}
+
+/* FULL SIZE WEBPAGE */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.name {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    text-shadow: 2px 2px black;
+    margin: 10px;
+}
+.contact-me {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+.contact-me > h1 {
+    margin: 10px;
+    padding: 0;
+}
+
+/* SECTION */
+
+.section {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: 100%;
+    position: relative;
+}
+
+/* SECTION TITLE */
+
+.section__title {
+    margin: 0;
+    padding: 0px;
+    margin-top: 0px;
+    font-family: 'Sintony', sans-serif;
+    font-size: 4em;
+    text-shadow: 2px 2px black;
+    position: absolute;
+    ;
+    top: 10px;
+    left: 10px;
+}
+
+/* TEXT LAYER */
+
+.section__text-layer {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: fit-content;
+    height: fit-content;
+}
+.section__text-layer span {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 4px 10px;
+    text-shadow: 2px 2px black;
+    font-size: 200%;
+}
+
+/* SELECTION COLOR */
+
+::selection {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+::-moz-selection {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track-piece {
+		background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+		background-color: white;
+}
+
+/* MY MISSION */
+
+.section.my-mission {
+    background-image: url(../img/macbookair.jpg);
+}
+.section.my-mission .section__text-layer {
+    top: 20%;
+    left: -60%;
+}
+
+/* MY WORK */
+
+.section.my-work {
+    background-image: url(../img/work.jpg);
+}
+.section.my-work .section__text-layer {
+    top: -20%;
+    left: 50%;
+}
+
+/* MY SKILLS */
+
+.section.my-skills {
+    background-image: url(../img/programming.jpg);
+}
+.section.my-skills .section__text-layer {
+    top: 0%;
+    left: 20%;
+}
+
+/* MY QUALIFICATIONS */
+
+.section.my-qualifications {
+    background-image: url(../img/opened_book.jpg);
+}
+.section.my-qualifications .section__text-layer {
+    top: -10%;
+    left: -40%;
+}
+
+/* MY LIFE */
+
+.section.my-life {
+    background-image: url(../img/kids.jpg);
+}
+.section.my-life .section__text-layer {
+    top: 20%;
+    left: 20%;
+}
+
+
+/* MY HOBBIES */
+
+.section.my-hobbies {
+    background-image: url(../img/norwaydock.jpg);
+}
+.section.my-hobbies .section__text-layer {
+    top: -30%;
+    left: -30%;
+}

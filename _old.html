@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Sixtisam</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Sixtisam, a young, passionate developer">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <div class="page-slide">
+                <h1>Sixtisam</h1>
+                <h2>I am a 18 years old software engineer living in Switzerland.</h2>
+            </div>
+            <div class="page-slide">
+                <h2>XX</h2>
+            </div>
+        </div>
+    <script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.page-wrapper').slick({
+                dots: false,
+                infinite: true,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+    </body>
+</html>
