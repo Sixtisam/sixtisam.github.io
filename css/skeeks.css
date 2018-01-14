@@ -9,11 +9,14 @@
 /* FULL SIZE WEBPAGE */
 
 html, body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     padding: 0;
     margin: 0;
+    /*overflow-x: hidden;
+    overflow-x: auto;*/
 }
+
 .name {
     position: fixed;
     right: 0;
@@ -21,7 +24,9 @@ html, body {
     z-index: 100;
     text-shadow: 2px 2px black;
     margin: 10px;
+    font-size: 1em;
 }
+
 .contact-me {
     position: fixed;
     bottom: 0;
@@ -30,9 +35,20 @@ html, body {
     text-shadow: 2px 2px black;
     text-decoration: none;
 }
-.contact-me > h1 {
+
+.contact-me>h1 {
     margin: 10px;
     padding: 0;
+    font-size: 1em;
+}
+
+@media only screen and (min-device-width: 800px) {
+    .name {
+        font-size: 3em;
+    }
+    .contact-me>h1 {
+        font-size: 3em;
+    }
 }
 
 /* SECTION */
@@ -40,26 +56,32 @@ html, body {
 .section {
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
     position: relative;
+    overflow-x: hidden;
 }
 
 /* SECTION TITLE */
 
 .section__title {
     margin: 0;
-    padding: 0px;
+    padding: 0px 6px;
     margin-top: 0px;
     font-family: 'Sintony', sans-serif;
-    font-size: 4em;
+    font-size: 2.2em;
     text-shadow: 2px 2px black;
     position: absolute;
-    ;
     top: 10px;
     left: 10px;
+}
+
+@media only screen and (min-device-width: 800px) {
+    .section__title {
+        font-size: 6em;
+    }
 }
 
 /* TEXT LAYER */
@@ -74,12 +96,19 @@ html, body {
     width: fit-content;
     height: fit-content;
 }
+
 .section__text-layer span {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 4px 10px;
     text-shadow: 2px 2px black;
-    font-size: 200%;
+    font-size: 100%;
+}
+
+@media only screen and (min-device-width: 800px) {
+    .section__text-layer span {
+        font-size: 200%;
+    }
 }
 
 /* SELECTION COLOR */
@@ -87,18 +116,27 @@ html, body {
 ::selection {
     background-color: rgba(0, 0, 0, 0.5);
 }
+
 ::-moz-selection {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* MY MISSION */
+/* Philosophy */
 
-.section.my-mission {
-    background-image: url(../img/macbookair.jpg);
+.section.my-philosophy {
+    background-image: url(../img/designing.jpg);
 }
-.section.my-mission .section__text-layer {
-    top: 20%;
-    left: -60%;
+
+.section.my-philosophy .section__text-layer {
+    top: 55%;
+    left: -30%;
+}
+
+@media only screen and (min-device-width: 800px) {
+    .section.my-philosophy .section__text-layer {
+        top: 20%;
+        left: -60%;
+    }
 }
 
 /* MY WORK */
@@ -106,16 +144,25 @@ html, body {
 .section.my-work {
     background-image: url(../img/work.jpg);
 }
+
 .section.my-work .section__text-layer {
-    top: -20%;
-    left: 50%;
+    top: -40%;
+    left: -10%;
+}
+
+@media only screen and (min-device-width: 800px) {
+    .section.my-work .section__text-layer {
+        top: -20%;
+        left: 50%;
+    }
 }
 
 /* MY SKILLS */
 
 .section.my-skills {
-    background-image: url(../img/programming.jpg);
+    background-image: url(../img/code.jpg);
 }
+
 .section.my-skills .section__text-layer {
     top: 0%;
     left: 20%;
@@ -126,9 +173,17 @@ html, body {
 .section.my-qualifications {
     background-image: url(../img/opened_book.jpg);
 }
+
 .section.my-qualifications .section__text-layer {
     top: -10%;
-    left: -40%;
+    left: 0%;
+}
+
+@media only screen and (min-device-width: 800px) {
+    .section.my-qualifications .section__text-layer {
+        top: -10%;
+        left: -40%;
+    }
 }
 
 /* MY LIFE */
@@ -136,18 +191,15 @@ html, body {
 .section.my-life {
     background-image: url(../img/kids.jpg);
 }
+
 .section.my-life .section__text-layer {
     top: 20%;
-    left: 20%;
+    left: 0%;
 }
 
-
-/* MY HOBBIES */
-
-.section.my-hobbies {
-    background-image: url(../img/norwaydock.jpg);
-}
-.section.my-hobbies .section__text-layer {
-    top: -30%;
-    left: -30%;
+@media only screen and (min-device-width: 800px) {
+    .section.my-life .section__text-layer {
+        top: 20%;
+        left: 20%;
+    }
 }
