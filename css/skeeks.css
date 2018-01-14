@@ -59,6 +59,7 @@ html, body {
     height: 100vh;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     position: relative;
     overflow-x: hidden;
 }
@@ -131,6 +132,7 @@ html, body {
 
 .section.my-philosophy {
     background-image: url(../img/designing.jpg);
+    background-position-x: -300px;
 }
 
 .section.my-philosophy .section__text-layer {
