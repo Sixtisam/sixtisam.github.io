@@ -145,6 +145,9 @@ html, body {
         top: 20%;
         left: -60%;
     }
+    .section.section.my-philosophy {
+        background-position-x: center;
+    }
 }
 
 /* MY WORK */
