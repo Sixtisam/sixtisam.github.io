@@ -108,8 +108,9 @@ html, body {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 4px 10px;
-    text-shadow: 2px 2px black;
+    text-shadow: 1px 1px black;
     font-size: 100%;
+    text-decoration: none;
 }
 
 @media only screen and (min-device-width: 800px) {
