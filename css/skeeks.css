@@ -4,6 +4,7 @@
     box-sizing: border-box;
     color: white;
     font-family: 'Sintony', sans-serif;
+    font-size: 1em;
 }
 
 /* FULL SIZE WEBPAGE */
@@ -13,8 +14,6 @@ html, body {
     height: 100vh;
     padding: 0;
     margin: 0;
-    /*overflow-x: hidden;
-    overflow-x: auto;*/
 }
 
 .name {
@@ -25,6 +24,9 @@ html, body {
     text-shadow: 2px 2px black;
     margin: 10px;
     font-size: 1em;
+    margin-right: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
 }
 
 .contact-me {
@@ -76,6 +78,8 @@ html, body {
     position: absolute;
     top: 10px;
     left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 6px 10px;
 }
 
 @media only screen and (min-device-width: 800px) {
@@ -93,8 +97,14 @@ html, body {
     right: 0;
     top: 0;
     bottom: 0;
+    width: -moz-fit-content;
+    width: -ms-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -ms-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
+    word-wrap: break-word;
 }
 
 .section__text-layer span {
